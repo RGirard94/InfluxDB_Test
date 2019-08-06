@@ -1,0 +1,35 @@
+#- name: copy manual injection
+#  become: true
+#  copy:
+#    src: "/Users/romain.girard/workspace/Aura_LoadTesting_InfluxDB/roles/copy_directories/files/load_testing_python_scripts/manual_data_injection/manual_data_injection.py"
+#    dest: "/opt/docker-data/tests/load_testing_python_scripts/manual_data_injection/manual_data_injection.py"
+
+#- name: copy aura table
+#  become: true
+#  copy:
+#    src: "/Users/romain.girard/workspace/Aura_LoadTesting_InfluxDB/roles/copy_directories/files/load_testing_python_scripts/manual_data_injection/aura_table.py"
+#    dest: "/opt/docker-data/tests/load_testing_python_scripts/manual_data_injection/aura_table.py"
+
+#- name: copy library.py
+#  become: true
+#  copy:
+#    src: "/Users/romain.girard/workspace/Aura_LoadTesting_InfluxDB/roles/copy_directories/files/load_testing_python_scripts/manual_data_injection/library.py"
+#    dest: "/opt/docker-data/tests/load_testing_python_scripts/manual_data_injection/library.py"
+
+- name: copy reading_test.py
+  become: true
+  copy:
+    src: "/Users/romain.girard/workspace/Aura_LoadTesting_InfluxDB/roles/copy_directories/files/load_testing_python_scripts/python_test_scripts/reading_test.py"
+    dest: "/opt/docker-data/tests/load_testing_python_scripts/python_test_scripts/reading_test.py"
+
+- name: copy loading_test.py
+  become: true
+  copy:
+    src: "/Users/romain.girard/workspace/Aura_LoadTesting_InfluxDB/roles/copy_directories/files/load_testing_python_scripts/python_test_scripts/loading_test.py"
+    dest: "/opt/docker-data/tests/load_testing_python_scripts/python_test_scripts/loading_test.py"
+
+#- name: copy random_data_generator_2.py
+#  become: true
+#  copy:
+#    src: "/Users/romain.girard/workspace/Aura_LoadTesting_InfluxDB/roles/copy_directories/files/load_testing_python_scripts/random_data_generator/source/random_data_generator_2.py"
+#    dest: "/opt/docker-data/tests/load_testing_python_scripts/random_data_generator/source/random_data_generator_2.py"

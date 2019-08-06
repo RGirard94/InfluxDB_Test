@@ -1,0 +1,14 @@
+[Paths]
+success_files_directory: /opt/docker-data/data/success/
+failed_files_directory: /opt/docker-data/data/problem/
+
+[Influxdb Client]
+database_name = physio_signals
+host = db.{{ domain }}
+port = 80
+user = root
+password = root
+
+[Airflow]
+owner = Robin Champseix
+email = rchampseix@octo.com

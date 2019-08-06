@@ -1,0 +1,8 @@
+---
+
+all:
+  hosts:
+    18.223.205.148:
+      ansible_ssh_user: centos
+      is_prod: false
+      domain: "aura.healthcare.local.aws"
