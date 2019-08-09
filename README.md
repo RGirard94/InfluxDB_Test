@@ -42,7 +42,7 @@ This Ansible playbook consists of two roles:
 
 At first you need to launch the playbook to install prerequisite and copy_directories roles. It allows to set the work environment to perform well the loading tests.
 
-`ansible-playbook -i inventories/dev.yml install.yml`
+`ansible-playbook -i inventories/dev.yml --key-file "/PATH/TO/YOUR/KEY/FILE" install.yml`
                    
 ## Directories details
 
@@ -58,5 +58,5 @@ Two tests are located in python_test_scripts directory
   - reading_test.py performs some queries.
   
 To execute these scripts in background:
- `nohup sudo python3.6 loading_test_timescale.py`
- `nohup sudo python3.6 reading_test_timescale.py`
+ `nohup sudo python3.6 loading_test.py`
+ `nohup sudo python3.6 reading_test.py`
